@@ -1,0 +1,11 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "member-ordering": [false],
+    "object-literal-sort-keys": false,
+    "trailing-comma": [true, { "multiline": "never", "singleline": "never" }],
+    "variable-name": ["allow-leading-underscore"],
+    "no-debugger": true
+  }
+}

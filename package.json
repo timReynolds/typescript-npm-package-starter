@@ -1,0 +1,59 @@
+{
+  "name": "typescript-npm-package-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate project to create npm package in typescript",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timreynolds/typescript-npm-package-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timreynolds/typescript-npm-package-starter/issues"
+  },
+  "homepage": "https://github.com/timreynolds/typescript-npm-package-starter",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "tslint 'src/**/*.ts'",
+    "prettier": "prettier --parser typescript --write '**/*.ts'",
+    "precommit": "lint-staged",
+    "postversion": "git push origin master --tags --no-verify",
+    "preversion": "npm run unit && npm run build"
+  },
+  "author": "Tim Reynolds",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^20.0.8",
+    "@types/node": "^8.0.25",
+    "coveralls": "^2.13.1",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.4",
+    "prettier": "^1.5.3",
+    "rimraf": "^2.6.1",
+    "ts-jest": "^20.0.10",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.4.2"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --parser typescript --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
+}

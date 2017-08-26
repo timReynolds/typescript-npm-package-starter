@@ -11,6 +11,6 @@ script:
 - |
     if [ "$TRAVIS_PULL_REQUEST" = false ]; then
       set -e
-      npm run test:cov
+      npm run test:coverage
       cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
     fi

@@ -5,6 +5,7 @@ Typescript NPM Package Starter
 [![Build Status](https://travis-ci.org/timReynolds/typescript-npm-package-starter.svg?branch=master)](https://travis-ci.org/timReynolds/typescript-npm-package-starter)
 [![Maintainability](https://api.codeclimate.com/v1/badges/99ef9fd41a78d421248e/maintainability)](https://codeclimate.com/github/timReynolds/typescript-npm-package-starter/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/99ef9fd41a78d421248e/test_coverage)](https://codeclimate.com/github/timReynolds/typescript-npm-package-starter/test_coverage)
+
 An opinionated setup for creating npm packages using typescript.
 
 # Features

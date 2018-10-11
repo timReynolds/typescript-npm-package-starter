@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/jest": "23.3.5",
     "@types/node": "10.11.7",
-    "husky": "1.1.1",
+    "husky": "1.1.2",
     "jest": "23.6.0",
     "lint-staged": "7.3.0",
     "prettier": "1.14.3",
